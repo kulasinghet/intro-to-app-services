@@ -15,4 +15,8 @@ router.post('/bye',function(req,res,next){
   res.send('Bye and thanks for attending the session. You said: '+message);
 });
 
+router.get('/cicd',function(req,res,next){
+  res.send('When I push to the repo, App Service changes');
+});
+
 module.exports = router;
